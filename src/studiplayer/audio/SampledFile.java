@@ -68,9 +68,5 @@ public abstract class SampledFile extends AudioFile {
 	public long getDuration() {
 		return duration;
 	}
-	
-	public static void main(String[] args) {}
-
-
 }
-
+	

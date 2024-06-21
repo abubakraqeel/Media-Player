@@ -25,12 +25,13 @@ public class WavFile extends SampledFile {
 	public void readAndSetDurationFromFile() throws NotPlayableException {
 		try {
 		WavParamReader.readParams(this.getPathname());
-		}catch ( Exception e) {
-			throw new NotPlayableException(getPathname(), "Parameters not found");
-		}
 		float frameRate = WavParamReader.getFrameRate();
 		long totalFrames = WavParamReader.getNumberOfFrames();
 		duration = computeDuration(totalFrames, frameRate);
+		}catch ( Exception e) {
+			throw new NotPlayableException(getPathname(), "Parameters not found");
+		}
+		
 		
 	}
 	public String toString() {

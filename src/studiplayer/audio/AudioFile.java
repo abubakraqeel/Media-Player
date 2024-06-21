@@ -136,10 +136,10 @@ public abstract class AudioFile {
 	abstract public String formatDuration();
 	abstract public String formatPosition();
 
-	public long getDuration() {
-		// TODO Auto-generated method stub
-		return -1l;
-	}
+//	public long getDuration() {
+//		// TODO Auto-generated method stub
+//		return -1l;
+//	}
 	
 	public String getAlbum() {
 		return "";
